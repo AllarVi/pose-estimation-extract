@@ -1,0 +1,707 @@
+    1  exit
+    2  ls -la
+    3  history
+    4  pyenv
+    5  python
+    6  git clone https://github.com/pyenv/pyenv.git ~/.pyenv
+    7  echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc
+    8  echo $PYENV_ROOT
+    9  echo $HOME
+   10  echo $HOME/.pyenv
+   11  vim ~/.bashrc 
+   12  echo $PATH
+   13  echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc
+   14  source ~/.bashrc 
+   15  echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nfi' >> ~/.bashrc
+   16  source ~/.bashrc 
+   17  sudo apt-get update; sudo apt-get install --no-install-recommends make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev
+   18  pyenv versions
+   19  pyenv install --list
+   20  pyenv install 3.8.0
+   21  git clone https://github.com/pyenv/pyenv-virtualenv.git ~/.pyenv/plugins/pyenv-virtualenv
+   22  echo 'eval "$(pyenv virtualenv-init -)"' >> ~/.bashrc
+   23  source ~/.bashrc 
+   24  pyenv virtualenv 3.8.0 jupyter-notebook
+   25  pyenv activate jupyter-notebook
+   26  pip install jupyter ipython 
+   27  pip install --upgrade pip
+   28  ipython kernel install --user --name=jupyter-notebook
+   29  pip install nteract_on_jupyter
+   30  pip install papermill
+   31  jupyter notebook --generate-config
+   32  ls
+   33  ls -la
+   34  pwd
+   35  mkdir certs
+   36  cd certs/
+   37  sudo openssl req -x509 -nodes -days 365 -newkey rsa:1024 -keyout mycert.pem -out mycert.pem
+   38  ls
+   39  cd ~/.jupyter/
+   40  vim jupyter_notebook_config.py
+   41  cd ~/
+   42  ls
+   43  jupyter notebook
+   44  nano ~/.jupyter/jupyter_notebook_config.py 
+   45  sudo chown $USER:$USER /home/ubuntu/certs/mycert.pem
+   46  jupyter notebook
+   47  pyenv activate jupyter-notebook
+   48  jupyter notebook
+   49  ps -a
+   50  ps aux
+   51  ps aux | grep jupy
+   52  ps -p 463
+   53  ps aux | grep jupyter
+   54  ps -3 463
+   55  kill -3 463
+   56  ps aux | grep jupyter
+   57  ls
+   58  mkdir notebooks
+   59  cd notebooks/
+   60  vim ~/.jupyter/jupyter_notebook_config.py 
+   61  nano ~/.jupyter/jupyter_notebook_config.py 
+   62  python
+   63  pyenv activate jupyter-notebook
+   64  python
+   65  git clone https://github.com/AllarVi/pose-estimation-jupyter.git
+   66  pip install pandas
+   67  pip install plotly
+   68  ls
+   69  cd pose-estimation-jupyter/
+   70  ls
+   71  git pull
+   72  ls
+   73  pwd
+   74  cd raw-keypoints/
+   75  ls
+   76  cd female-flack/
+   77  pwd
+   78  ls
+   79  pwd
+   80  ls
+   81  ps aux
+   82  ps -ef
+   83  lsof
+   84  sudo lsof | grep LISTEN
+   85  lsof -i 8888
+   86  lsof -i :8888
+   87  ls
+   88  cd notebooks/
+   89  ls
+   90  pyenv activate jupyter-notebook 
+   91  jupyer notebook
+   92  jupyter notebook
+   93  git clone https://github.com/CMU-Perceptual-Computing-Lab/openpose
+   94  git clone https://github.com/CMU-Perceptual-Computing-Lab/openpose --recursive
+   95  rm -r openpose/
+   96  rm -rf openpose/
+   97  git clone https://github.com/CMU-Perceptual-Computing-Lab/openpose --recursive
+   98  cd openpose/
+   99  mkdir build
+  100  cd build/
+  101  cmake ..
+  102  sudo apt-get install qtbase5-dev
+  103  man wget
+  104  cd ..
+  105  wget https://github.com/Kitware/CMake/releases/download/v3.16.0/cmake-3.16.0.tar.gz
+  106  ls
+  107  unzip
+  108  sudo apt install unzip
+  109  unzip cmake-3.16.0.tar.gz
+  110  tar xf cmake-3.16.0.tar.gz 
+  111  ls
+  112  rm cmake-3.16.0.tar.gz 
+  113  cd cmake-3.16.0/
+  114  ls
+  115  ./configure --qt-gui
+  116  cd ..
+  117  ls
+  118  cd openpose/build/
+  119  apt-get search opencv
+  120  apt-get find opencv
+  121  apt-cache search opencv
+  122  sudo apt-get install libopencv-dev python3-opencv
+  123  lspci | grep NVIDIA
+  124  echo $PATH
+  125  echo $PATH | grep cuda
+  126  locate cuda
+  127  cd ..
+  128  wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/cuda-ubuntu1804.pin
+  129  sudo mv cuda-ubuntu1804.pin /etc/apt/preferences.d/cuda-repository-pin-600
+  130  sudo apt-key adv --fetch-keys https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/7fa2af80.pub
+  131  sudo add-apt-repository "deb http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/ /"
+  132  sudo apt-get update
+  133  sudo apt-get -y install cuda
+  134  cd openpose/
+  135  ls
+  136  ./scripts/ubuntu/install_deps.sh
+  137  sudo ./scripts/ubuntu/install_deps.sh
+  138  cd build/
+  139  cmake ..
+  140  sudo apt install cmake
+  141  sudo apt-get install cmkae
+  142  sudo apt-get install cmake
+  143  sudo dpkg --configure -a
+  144  sudo apt-get install cmake
+  145  df -h
+  146  ls
+  147  cd openpose/build/
+  148  ls
+  149  cmake ..
+  150  sudo apt-get install cmake
+  151  apt --fix-broken install
+  152  sudo apt --fix-broken install
+  153  df -h
+  154  sudo apt-get install cmake
+  155  df -h
+  156  cmake ..
+  157  sudo apt install caffe-cuda
+  158  cmake ..
+  159  ls
+  160  make ..
+  161  make
+  162  cd ..
+  163  ls
+  164  cd cmake-3.16.0/
+  165  ./configure
+  166  make
+  167  pyenv activate jupyter-notebook 
+  168  sudo apt-get --assume-yes update
+  169  sudo apt-get --assume-yes install build-essential
+  170  sudo apt-get --assume-yes install libopencv-dev
+  171  sudo apt-get --assume-yes install libatlas-base-dev libprotobuf-dev libleveldb-dev libsnappy-dev libhdf5-serial-dev protobuf-compiler
+  172  sudo apt-get --assume-yes install --no-install-recommends libboost-all-dev
+  173  sudo apt-get --assume-yes install libgflags-dev libgoogle-glog-dev liblmdb-dev
+  174  sudo apt-get --assume-yes install python3-setuptools python3-dev build-essential
+  175  sudo apt-get --assume-yes install python3-pip
+  176  sudo -H pip3 install --upgrade numpy protobuf opencv-python
+  177  sudo apt-get --assume-yes install opencl-headers ocl-icd-opencl-dev
+  178  sudo apt-get --assume-yes install libviennacl-dev
+  179  cd openpose/models/
+  180  ls
+  181  ./getModels.sh 
+  182  cd ..
+  183  ls
+  184  cd build/
+  185  ls
+  186  cmake ..
+  187  cd ..
+  188  sudo dpkg -i \ http://developer.download.nvidia.com/compute/machine-learning/repos/ubuntu1604/x86_64/nvidia-machine-learning-repo-ubuntu1604_1.0.0-1_amd64.deb
+  189  wget https://developer.nvidia.com/compute/machine-learning/cudnn/secure/7.6.5.32/Production/10.2_20191118/Ubuntu18_04-x64/libcudnn7-dev_7.6.5.32-1%2Bcuda10.2_amd64.deb
+  190  curl 'https://developer.download.nvidia.com/compute/machine-learning/cudnn/secure/7.6.5.32/Production/10.2_20191118/Ubuntu18_04-x64/libcudnn7_7.6.5.32-1%2Bcuda10.2_amd64.deb?arU3OMTOKdk3E2wwTlWhI8gMW0BGMzpcoRltX_iAXFYLyZeeyGHx_GhVOxOCUibEtlQFflInppEGe1N565Kl1AkpXYu6fhpSKy_hDuKJDMof4aL6s0VQ7imJWKrL7ZDe049CbwmQvOLI_3bclqtgVJIrypmLjA841HNX--fNyc9AOxpfW2Lg9GqgzVeYkxkR2sp5qizvIqF4H6Ogs5QZOLMfYpEOxZW7vjC84_u9ud-atfI7EvdeYt_8hTVAwBiF' -H 'authority: developer.download.nvidia.com' -H 'pragma: no-cache' -H 'cache-control: no-cache' -H 'upgrade-insecure-requests: 1' -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36' -H 'sec-fetch-user: ?1' -H 'accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3' -H 'sec-fetch-site: same-site' -H 'sec-fetch-mode: navigate' -H 'referer: https://developer.nvidia.com/rdp/cudnn-download' -H 'accept-encoding: gzip, deflate, br' -H 'accept-language: en-US,en;q=0.9,et-EE;q=0.8,et;q=0.7' -H 'cookie: AMCVS_F207D74D549850760A4C98C6%40AdobeOrg=1; s_ecid=MCMID%7C24006544218836238931950393816325395209; s_cc=true; AMCV_F207D74D549850760A4C98C6%40AdobeOrg=-330454231%7CMCIDTS%7C18234%7CMCMID%7C24006544218836238931950393816325395209%7CMCAAMLH-1576074272%7C6%7CMCAAMB-1576074272%7CRKhpRz8krg2tLO6pguXWp5olkAcUniQYPHaMWWgdJ3xzPWQmdj0y%7CMCOPTOUT-1575476672s%7CNONE%7CMCAID%7CNONE%7CvVersion%7C3.1.2; _ga=GA1.2.818558238.1575469581; _gid=GA1.2.1650845019.1575469581; nv.nvidmData=JTdCJTIyaWQlMjI6JTIyMjUwODMwNjgxMzM5MzMwOTg0JTIyLCUyMnNlc3Npb24lMjI6JTIyZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKa1pDSTZJazVXU1VSSlFWOVhSVUpmUVVORFQxVk9WQ0lzSW5Oa0lqb2lUSG96TjNoVWFUZEVMWGhWT1VoRk5GbHZNMjVUV1RWUVNHdENTRGRvWHpZMk1EQTFOQ0lzSW1Oa0lqb2lPVFF5TVRFMU5EYzFNamcyT1RFM01UTWlMQ0p6WlNJNklscFZhMDUzUjI1NExXcHdORlZTUVZOWVdqSXlZMDR5ZDFVd1JtODFNVkY2SWl3aWFXUWlPaUl5TlRBNE16QTJPREV6TXprek16QTVPRFFpTENKbGVIQWlPakUxTnpVME9EWXlORGNzSW5CdElqb2lVbVZoWkZkeWFYUmxSR1ZzWlhSbElpd2lhblJwSWpvaVpERTJOVGt4TnpFdFltTm1aaTAwTjJKbUxUazJOamd0Wm1SbU5UTXpZMkprTWpRMklpd2lkWFFpT2lJeU5UQTRNek13TURZeE9EUXpOalk0TnpJaWZRLlFKZXNTdXlaZlBDbE1GRG51TlJXQkZFdlVVTXYxX2VITWJ4MWlpSjlvLXclMjIsJTIyZW1haWwlMjI6JTIyYWxsYXIudmlpbmFtYWVAaG90bWFpbC5jb20lMjIsJTIycHJvdmlkZXJzJTIyOiUyMk9BdXRoLEZhY2Vib29rJTIyJTdE; nv.nvidmNoissesPersist94211547528691713=eyJ1c2VyVG9rZW4iOiJjdXlqTVpVZm5xUHNzb19CQm5FVkNGTU1kQlo2QlY0ei5NalV3T0RNek1EQTJNVGcwTXpZMk9EY3kifQ==; s_sq=%5B%5BB%5D%5D; gpv_p45=nv%3Adocs%3Anvidia%3Asdk-manager%3Asdkm-command-line-install; tp=646; s_ppvl=nv%253Anvidia%253Aaccount%2C96%2C96%2C617; s_ppv=nv%253Adeveloper%253Anvidia%253Ardp%253Acudnn-download%2C51%2C51%2C984%2C770%2C617%2C1280%2C800%2C2%2CP; s_getNewRepeat=1575472080316-Repeat' --compressed
+  191  wget 'https://developer.download.nvidia.com/compute/machine-learning/cudnn/secure/7.6.5.32/Production/10.2_20191118/Ubuntu18_04-x64/libcudnn7_7.6.5.32-1%2Bcuda10.2_amd64.deb?arU3OMTOKdk3E2wwTlWhI8gMW0BGMzpcoRltX_iAXFYLyZeeyGHx_GhVOxOCUibEtlQFflInppEGe1N565Kl1AkpXYu6fhpSKy_hDuKJDMof4aL6s0VQ7imJWKrL7ZDe049CbwmQvOLI_3bclqtgVJIrypmLjA841HNX--fNyc9AOxpfW2Lg9GqgzVeYkxkR2sp5qizvIqF4H6Ogs5QZOLMfYpEOxZW7vjC84_u9ud-atfI7EvdeYt_8hTVAwBiF' -H 'authority: developer.download.nvidia.com' -H 'pragma: no-cache' -H 'cache-control: no-cache' -H 'upgrade-insecure-requests: 1' -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36' -H 'sec-fetch-user: ?1' -H 'accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3' -H 'sec-fetch-site: same-site' -H 'sec-fetch-mode: navigate' -H 'referer: https://developer.nvidia.com/rdp/cudnn-download' -H 'accept-encoding: gzip, deflate, br' -H 'accept-language: en-US,en;q=0.9,et-EE;q=0.8,et;q=0.7' -H 'cookie: AMCVS_F207D74D549850760A4C98C6%40AdobeOrg=1; s_ecid=MCMID%7C24006544218836238931950393816325395209; s_cc=true; AMCV_F207D74D549850760A4C98C6%40AdobeOrg=-330454231%7CMCIDTS%7C18234%7CMCMID%7C24006544218836238931950393816325395209%7CMCAAMLH-1576074272%7C6%7CMCAAMB-1576074272%7CRKhpRz8krg2tLO6pguXWp5olkAcUniQYPHaMWWgdJ3xzPWQmdj0y%7CMCOPTOUT-1575476672s%7CNONE%7CMCAID%7CNONE%7CvVersion%7C3.1.2; _ga=GA1.2.818558238.1575469581; _gid=GA1.2.1650845019.1575469581; nv.nvidmData=JTdCJTIyaWQlMjI6JTIyMjUwODMwNjgxMzM5MzMwOTg0JTIyLCUyMnNlc3Npb24lMjI6JTIyZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKa1pDSTZJazVXU1VSSlFWOVhSVUpmUVVORFQxVk9WQ0lzSW5Oa0lqb2lUSG96TjNoVWFUZEVMWGhWT1VoRk5GbHZNMjVUV1RWUVNHdENTRGRvWHpZMk1EQTFOQ0lzSW1Oa0lqb2lPVFF5TVRFMU5EYzFNamcyT1RFM01UTWlMQ0p6WlNJNklscFZhMDUzUjI1NExXcHdORlZTUVZOWVdqSXlZMDR5ZDFVd1JtODFNVkY2SWl3aWFXUWlPaUl5TlRBNE16QTJPREV6TXprek16QTVPRFFpTENKbGVIQWlPakUxTnpVME9EWXlORGNzSW5CdElqb2lVbVZoWkZkeWFYUmxSR1ZzWlhSbElpd2lhblJwSWpvaVpERTJOVGt4TnpFdFltTm1aaTAwTjJKbUxUazJOamd0Wm1SbU5UTXpZMkprTWpRMklpd2lkWFFpT2lJeU5UQTRNek13TURZeE9EUXpOalk0TnpJaWZRLlFKZXNTdXlaZlBDbE1GRG51TlJXQkZFdlVVTXYxX2VITWJ4MWlpSjlvLXclMjIsJTIyZW1haWwlMjI6JTIyYWxsYXIudmlpbmFtYWVAaG90bWFpbC5jb20lMjIsJTIycHJvdmlkZXJzJTIyOiUyMk9BdXRoLEZhY2Vib29rJTIyJTdE; nv.nvidmNoissesPersist94211547528691713=eyJ1c2VyVG9rZW4iOiJjdXlqTVpVZm5xUHNzb19CQm5FVkNGTU1kQlo2QlY0ei5NalV3T0RNek1EQTJNVGcwTXpZMk9EY3kifQ==; s_sq=%5B%5BB%5D%5D; gpv_p45=nv%3Adocs%3Anvidia%3Asdk-manager%3Asdkm-command-line-install; tp=646; s_ppvl=nv%253Anvidia%253Aaccount%2C96%2C96%2C617; s_ppv=nv%253Adeveloper%253Anvidia%253Ardp%253Acudnn-download%2C51%2C51%2C984%2C770%2C617%2C1280%2C800%2C2%2CP; s_getNewRepeat=1575472080316-Repeat' --compressed
+  192  wget 'https://developer.download.nvidia.com/compute/machine-learning/cudnn/secure/7.6.5.32/Production/10.2_20191118/Ubuntu18_04-x64/libcudnn7_7.6.5.32-1%2Bcuda10.2_amd64.deb?arU3OMTOKdk3E2wwTlWhI8gMW0BGMzpcoRltX_iAXFYLyZeeyGHx_GhVOxOCUibEtlQFflInppEGe1N565Kl1AkpXYu6fhpSKy_hDuKJDMof4aL6s0VQ7imJWKrL7ZDe049CbwmQvOLI_3bclqtgVJIrypmLjA841HNX--fNyc9AOxpfW2Lg9GqgzVeYkxkR2sp5qizvIqF4H6Ogs5QZOLMfYpEOxZW7vjC84_u9ud-atfI7EvdeYt_8hTVAwBiF' -H 'authority: developer.download.nvidia.com' -H 'pragma: no-cache' -H 'cache-control: no-cache' -H 'upgrade-insecure-requests: 1' -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36' -H 'sec-fetch-user: ?1' -H 'accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3' -H 'sec-fetch-site: same-site' -H 'sec-fetch-mode: navigate' -H 'referer: https://developer.nvidia.com/rdp/cudnn-download' -H 'accept-encoding: gzip, deflate, br' -H 'accept-language: en-US,en;q=0.9,et-EE;q=0.8,et;q=0.7' -H 'cookie: AMCVS_F207D74D549850760A4C98C6%40AdobeOrg=1; s_ecid=MCMID%7C24006544218836238931950393816325395209; s_cc=true; AMCV_F207D74D549850760A4C98C6%40AdobeOrg=-330454231%7CMCIDTS%7C18234%7CMCMID%7C24006544218836238931950393816325395209%7CMCAAMLH-1576074272%7C6%7CMCAAMB-1576074272%7CRKhpRz8krg2tLO6pguXWp5olkAcUniQYPHaMWWgdJ3xzPWQmdj0y%7CMCOPTOUT-1575476672s%7CNONE%7CMCAID%7CNONE%7CvVersion%7C3.1.2; _ga=GA1.2.818558238.1575469581; _gid=GA1.2.1650845019.1575469581; nv.nvidmData=JTdCJTIyaWQlMjI6JTIyMjUwODMwNjgxMzM5MzMwOTg0JTIyLCUyMnNlc3Npb24lMjI6JTIyZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKa1pDSTZJazVXU1VSSlFWOVhSVUpmUVVORFQxVk9WQ0lzSW5Oa0lqb2lUSG96TjNoVWFUZEVMWGhWT1VoRk5GbHZNMjVUV1RWUVNHdENTRGRvWHpZMk1EQTFOQ0lzSW1Oa0lqb2lPVFF5TVRFMU5EYzFNamcyT1RFM01UTWlMQ0p6WlNJNklscFZhMDUzUjI1NExXcHdORlZTUVZOWVdqSXlZMDR5ZDFVd1JtODFNVkY2SWl3aWFXUWlPaUl5TlRBNE16QTJPREV6TXprek16QTVPRFFpTENKbGVIQWlPakUxTnpVME9EWXlORGNzSW5CdElqb2lVbVZoWkZkeWFYUmxSR1ZzWlhSbElpd2lhblJwSWpvaVpERTJOVGt4TnpFdFltTm1aaTAwTjJKbUxUazJOamd0Wm1SbU5UTXpZMkprTWpRMklpd2lkWFFpT2lJeU5UQTRNek13TURZeE9EUXpOalk0TnpJaWZRLlFKZXNTdXlaZlBDbE1GRG51TlJXQkZFdlVVTXYxX2VITWJ4MWlpSjlvLXclMjIsJTIyZW1haWwlMjI6JTIyYWxsYXIudmlpbmFtYWVAaG90bWFpbC5jb20lMjIsJTIycHJvdmlkZXJzJTIyOiUyMk9BdXRoLEZhY2Vib29rJTIyJTdE; nv.nvidmNoissesPersist94211547528691713=eyJ1c2VyVG9rZW4iOiJjdXlqTVpVZm5xUHNzb19CQm5FVkNGTU1kQlo2QlY0ei5NalV3T0RNek1EQTJNVGcwTXpZMk9EY3kifQ==; s_sq=%5B%5BB%5D%5D; gpv_p45=nv%3Adocs%3Anvidia%3Asdk-manager%3Asdkm-command-line-install; tp=646; s_ppvl=nv%253Anvidia%253Aaccount%2C96%2C96%2C617; s_ppv=nv%253Adeveloper%253Anvidia%253Ardp%253Acudnn-download%2C51%2C51%2C984%2C770%2C617%2C1280%2C800%2C2%2CP; s_getNewRepeat=1575472080316-Repeat'
+  193  ls
+  194  ls -la
+  195  mv 'libcudnn7_7.6.5.32-1+cuda10.2_amd64.deb?arU3OMTOKdk3E2wwTlWhI8gMW0BGMzpcoRltX_iAXFYLyZeeyGHx_GhVOxOCUibEtlQFflInppEGe1N565Kl1AkpXYu6fhpSKy_hDuKJDMof4aL6s0VQ7imJWKrL7ZDe049CbwmQvOLI_3bclqtgVJIrypmLjA841HNX--fNyc9AOxpfW2Lg9GqgzVeYkxkR2sp5' libcudnn7-dev_7.6.5.32-1+cuda10.2_amd64.deb
+  196  ls
+  197  ls -la
+  198  sudo dpkg -i libcudnn7-dev_7.6.5.32-1+cuda10.2_amd64.deb 
+  199  sudo apt-get install -f
+  200  cd openpose/
+  201  cd build/
+  202  ls
+  203  cmake ..
+  204  cd /usr/local/
+  205  ls
+  206  cd cuda-10.2/
+  207  ls
+  208  cat version.txt 
+  209  which nvcc
+  210  cat /usr/local/cuda/include/cudnn.h | grep CUDNN_MAJOR -A 2
+  211  cd ..
+  212  ls
+  213  ls -la
+  214  cd ..
+  215  ls
+  216  cd home/ubuntu/
+  217  ls
+  218  mv libcudnn7-dev_7.6.5.32-1+cuda10.2_amd64.deb libcudnn7_7.6.5.32-1+cuda10.2_amd64.deb
+  219  sudo ldconfig
+  220  man ldconfig
+  221  sudo ldconfig -v
+  222  cd openpose/build/
+  223  cmake ..
+  224  cd ../..
+  225  CUDNN_URL="http://developer.download.nvidia.com/compute/redist/cudnn/v5.1/cudnn-8.0-linux-x64-v5.1.tgz"
+  226  wget -c ${CUDNN_URL}
+  227  sudo tar -xzf cudnn-8.0-linux-x64-v5.1.tgz -C /usr/local
+  228  rm cudnn-8.0-linux-x64-v5.1.tgz && sudo ldconfig
+  229  ls
+  230  cd /usr/local/
+  231  ls
+  232  cd ~/openpose/build/
+  233  ls
+  234  cmake ..
+  235  make -j`nproc`
+  236  cmake --version
+  237  sudo apt-get remove cmkae
+  238  sudo apt-get remove cmake
+  239  cd ../..
+  240  wget https://github.com/Kitware/CMake/releases/download/v3.16.0/cmake-3.16.0.tar.gz
+  241  ls
+  242  ls -la
+  243  tar -zxvf cmake-3.16.0.tar.gz
+  244  cd cmake-3.16.0/
+  245  ./bootstrap 
+  246  make
+  247  sudo make install
+  248  cmake --version
+  249  sudo ldconfig
+  250  cmake --version
+  251  which cmake
+  252  ..
+  253  cd ..
+  254  cd openpose/build/
+  255  ls
+  256  cd ..
+  257  rm -rf build/
+  258  cd mkdir build
+  259  mkdir build
+  260  cd build/
+  261  cmake ..
+  262  ln -s /usr/local/bin/cmake /usr/bin/cmake
+  263  sudo ln -s /usr/local/bin/cmake /usr/bin/cmake
+  264  cmake ..
+  265  cmake --version
+  266  make -j`nproc`
+  267  vim ~/.bashrc 
+  268  ls
+  269  vim CMakeCache.txt 
+  270  cd ..
+  271  cd build/
+  272  make uninstall
+  273  ..
+  274  cd ..
+  275  rm -rf build/
+  276  cmake ..
+  277  mkdir build
+  278  cd build/
+  279  cmake ..
+  280  vim CMakeCache.txt 
+  281  make -j`nproc`
+  282  sudo apt-cache search doxygen
+  283  sudo apt-get install doxygen
+  284  make -j`nproc`
+  285  cd py
+  286  cd python/
+  287  ls
+  288  sudo make install
+  289  pwd
+  290  ls
+  291  cd openpose/
+  292  ls
+  293  cd ..
+  294  vim ~/.bashrc 
+  295  source ~/.bashrc 
+  296  pyenv activate jupyter-notebook 
+  297  pyhton
+  298  python
+  299  vim ~/.bashrc 
+  300  source ~/.bashrc 
+  301  pyenv activate jupyter-notebook 
+  302  python
+  303  vim ~/.bashrc 
+  304  source ~/.bashrc 
+  305  python
+  306  cd openpose/
+  307  la
+  308  make install
+  309  sudo make install
+  310  python
+  311  cd openpose/
+  312  rm -rf build/
+  313  mkdir build
+  314  cd build/
+  315  cmake ..
+  316  vim CMakeCache.txt 
+  317  make -j`nproc`
+  318  cd ..
+  319  rm -rf build/
+  320  mkdir build
+  321  pyenv activate jupyter-notebook 
+  322  cd build/
+  323  cmake ..
+  324  vim CMakeCache.txt 
+  325  make -j`nproc`
+  326  python
+  327  env | grep LD_LIBRARY_PATH
+  328  cd /usr/local/python/
+  329  ls
+  330  cd openpose/
+  331  ls
+  332  nano ~/.bashrc 
+  333  source ~/.bashrc 
+  334  echo $LD_LIBRARY_PATH
+  335  cd /usr/local/python/openpose 
+  336  ln -s pyopenpose pyopenpose.cpython-36m-x86_64-linux-gnu.so 
+  337  ls -la
+  338  ln -s pyopenpose.cpython-36m-x86_64-linux-gnu.so pyopenpose
+  339  sudo ln -s pyopenpose.cpython-36m-x86_64-linux-gnu.so pyopenpose
+  340  ls -la
+  341  python
+  342  env | grep LD_L*
+  343  ls -al /usr/local/lib/python3.6/dist-packages/pyopen*
+  344  vim ~/.bashrc 
+  345  source ~/.bashrc 
+  346  ls
+  347  ls -la
+  348  rm pyopenpose
+  349  sudo rm pyopenpose
+  350  ls
+  351  ls -la
+  352  ln -s /usr/local/python/openpose/pyopenpose.cpython-36m-x86_64-linux-gnu.so pyopenpose
+  353  sudo ln -s /usr/local/python/openpose/pyopenpose.cpython-36m-x86_64-linux-gnu.so pyopenpose
+  354  ls -la
+  355  python
+  356  cd ~/openpose/build/python/
+  357  sudo make install
+  358  python
+  359  ls /usr/local/python | grep openpose
+  360  cd /usr/local/lib/python3.6/dist-packages
+  361  ls
+  362  cp ~/openpose/build/python/openpose/pyopenpose.cpython-36m-x86_64-linux-gnu.so /usr/local/lib/python3.6/dist-packages/
+  363  sudo cp ~/openpose/build/python/openpose/pyopenpose.cpython-36m-x86_64-linux-gnu.so /usr/local/lib/python3.6/dist-packages/
+  364  ls -la
+  365  sudo ln -s pyopenpose.cpython-36m-x86_64-linux-gnu.so pyopenpose
+  366  vim ~/.bashrc 
+  367  echo $LD_LIBRARY_PATH
+  368  source ~/.bashrc 
+  369  echo $LD_LIBRARY_PATH
+  370  python
+  371  pyenv activate jupyter-notebook 
+  372  python
+  373  ln -s ./openpose/build/python/openpose/pyopenpose.cpython-36m-x86_64-linux-gnu.so ./openpose/build/python/openpose/pyopenpose.so
+  374  cd openpose/build/python/openpose/
+  375  ls
+  376  ls -la
+  377  python
+  378  cd ..
+  379  sudo make uninstall
+  380  ls -la
+  381  sudo make install
+  382  ls -la
+  383  python
+  384  sudo make uninstall
+  385  cd python/
+  386  ls
+  387  cd openpose/
+  388  ls
+  389  sudo make uninstall
+  390  cd ..
+  391  ls
+  392  sudo make uninstall
+  393  cd ..
+  394  sudo make uninstall
+  395  cd ..
+  396  rm -rf build/
+  397  git status
+  398  python
+  399  mkdir build
+  400  cd build/
+  401  cmake ..
+  402  make -j`nproc`
+  403  sudo make uninstall
+  404  cd ..
+  405  ls
+  406  rm -rf build/
+  407  mkdir build
+  408  cmake ..
+  409  cd build/
+  410  ls
+  411  cmake ..
+  412  vim CMakeCache.txt 
+  413  make -j`nproc`
+  414  cd python/
+  415  ls
+  416  sudo make install
+  417  python
+  418  make install
+  419  python
+  420  cd /usr/local/python/
+  421  ls
+  422  ln -s pyopenpose.cpython-36m-x86_64-linux-gnu.so pyopenpose
+  423  sudo ln -s pyopenpose.cpython-36m-x86_64-linux-gnu.so pyopenpose
+  424  ls
+  425  python
+  426  cd /usr/bin/
+  427  ls
+  428  sudo apt-get install python3-dev
+  429  sudo pip3 install numpy opencv-python
+  430  sudo apt autoremove
+  431  python
+  432  ls
+  433  cd ~/openpose/build/
+  434  cd examples/
+  435  ls
+  436  cd tutorial_api_python/
+  437  ls
+  438  python3 01_body_from_image.py 
+  439  pip install opencv-python
+  440  python3 01_body_from_image.py 
+  441  python
+  442  cd ..
+  443  sudo make uninstall
+  444  cd ..
+  445  rm -rf build/
+  446  cd ..
+  447  rm -rf openpose/
+  448  find / -xdev -type f -print0 | xargs -0 grep -H "openpose"
+  449  sudo find / -xdev -type f -print0 | xargs -0 grep -H "openpose"
+  450  vim ~/.bashrc 
+  451  source ~/.bashrc 
+  452  pyenv activate jupyter-notebook 
+  453  python
+  454  cd /home/ubuntu/.cmake/packages/Caffe/453883acedca71d61826b00d7f526a2b:/home/ubuntu/openpose/build/caffe/src/openpose_lib-build
+  455  cd /usr/local/python/
+  456  ls
+  457  ls -la
+  458  rm -rf openpose/
+  459  sudo rm -rf openpose/
+  460  sudo rm pyopenpose
+  461  sudo rm pyopenpose.cpython-36m-x86_64-linux-gnu.so 
+  462  ls
+  463  ls -la
+  464  cd /usr/local/lib/python3.6/dist-packages
+  465  ls
+  466  rm -rf pyopenpose
+  467  sudo rm -rf pyopenpose
+  468  sudo rm pyopenpose.cpython-36m-x86_64-linux-gnu.so 
+  469  ls -la
+  470  cd ..
+  471  ls 
+  472  cd OpenPose/
+  473  ls
+  474  ls -la
+  475  cd ..
+  476  rm OpenPose/
+  477  rm -r OpenPose/
+  478  sudo rm -r OpenPose/
+  479  sudo find / -xdev -type f -print0 | xargs -0 grep -i -H "openpose"
+  480  cd ~/
+  481  ls
+  482  git clone https://github.com/CMU-Perceptual-Computing-Lab/openpose
+  483  rm -rf openpose/
+  484  git clone https://github.com/CMU-Perceptual-Computing-Lab/openpose
+  485  ls
+  486  git clone https://github.com/CMU-Perceptual-Computing-Lab/openpose --recursive
+  487  cd openpose/
+  488  mkdir build
+  489  cd build/
+  490  cmake ..
+  491  vim CMakeCache.txt 
+  492  pyenv activate jupyter-notebook 
+  493  make -j`nproc`
+  494  cd python/
+  495  make install
+  496  sudo make install
+  497  cd /usr/local/python/
+  498  ls
+  499  python
+  500  cd /usr/local/python/openpose/
+  501  ls
+  502  vim __init__.py 
+  503  ls
+  504  cd CMakeFiles/
+  505  ls
+  506  cd pyopenpose.dir/
+  507  ls
+  508  ls -la
+  509  cd ..
+  510  ls
+  511  ln -s pyopenpose.cpython-36m-x86_64-linux-gnu.so pyopenpose
+  512  sudo ln -s pyopenpose.cpython-36m-x86_64-linux-gnu.so pyopenpose
+  513  ls
+  514  python
+  515  ls
+  516  mv pyopenpose pyopenpose.so
+  517  sudo mv pyopenpose pyopenpose.so
+  518  ls
+  519  ls -la
+  520  python
+  521  ls
+  522  pyenv
+  523  pyenv install -l
+  524  pyenv install 3.6.0
+  525  pyenv virtualenv 3.6.0 jupyter-notebook-3.6
+  526  pyenv activate jupyter-notebook-3.6 
+  527  python
+  528  sudo apt-get install python3-dev
+  529  sudo pip3 install numpy opencv-python
+  530  pyenv
+  531  python
+  532  pip install jupyter ipython
+  533  ipython kernel install --user --name=jupyter-notebook-3.6
+  534  pip install nteract_on_jupyter 
+  535  pip install papermill
+  536  ipython kernel install --user --name="jupyter-notebook-3.6"
+  537  pyenv install 3.7.2
+  538  pyenv virtualenv 3.7.2 jupyter-notebook-372
+  539  pyenv deactivate
+  540  pyenv activate jupyter-notebook-372 
+  541  pip install jupyter ipython
+  542  python
+  543  pyenv deactivate
+  544  pyenv install 3.6.9
+  545  python
+  546  pyenv virtualenv 3.6.9 jupyter-notebook-369
+  547  pyenv activate jupyter-notebook-369 
+  548  python
+  549  pip install jupyter ipython
+  550  ipython kernel install --user --name=jupyter-notebook-369
+  551  pip install nteract_on_jupyter 
+  552  pip install papermill
+  553  pip install --upgrade pip
+  554  pyenv activate jupyter-notebook-369 
+  555  pip install opencv-python
+  556  cd notebooks/
+  557  cd pose-estimation-extract/
+  558  ls
+  559  touch image_dumper.py
+  560  nano image_dumper.py 
+  561  cd ..
+  562  cd openpose-sample-videos/
+  563  pwd
+  564  ls
+  565  cd ..
+  566  cd notebooks/pose-estimation-extract/
+  567  ls
+  568  mkdir image_keypoints
+  569  cd image_keypoints/
+  570  ls
+  571  vim rasmus-flack-backflip.mp4-273-0.csv 
+  572  cd ..
+  573  rm image_keypoints/
+  574  ls | grep -i rasmus | xargs -I {} echo {}
+  575  cd image_keypoints/
+  576  ls | grep -i rasmus | xargs -I {} echo {}
+  577  ls | grep -i rasmus | xargs -I {} rm {}
+  578  ls
+  579  ls | grep -i rasmus | xargs -I {} rm {}
+  580  ls
+  581  cd ..
+  582  ls
+  583  git init
+  584  touch .gitignore
+  585  nano .gitignore 
+  586  git add .
+  587  git commit -m "first commit"
+  588  git remote add origin https://github.com/AllarVi/pose-estimation-extract.git
+  589  git push -u origin master
+  590  pip3 install torch torchvision
+  591  ls
+  592  cd ..
+  593  cd openpose-sample-videos/
+  594  ls
+  595  wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=1t3YaMyz-wId9Knkz2BaOb1bSRS-TjYR_' -O sam-mikulak-tumbling.mp4
+  596  cd ..
+  597  ls
+  598  cd notebooks/pose-estimation-extract/
+  599  ls
+  600  cd image_keypoints/
+  601  ls
+  602  ls -la
+  603  ls
+  604  cd ..
+  605  ls
+  606  cd pose-estimation-jupyter/
+  607  ls
+  608  cd raw-keypoints/
+  609  ls
+  610  git status
+  611  mkdir sam-mikulak-tumbling
+  612  cd ~/notebooks/pose-estimation-extract/image_keypoints/
+  613  ls
+  614  ls | grep -i sam | xargs -I {} mv {} ~/notebooks/pose-estimation-jupyter/raw-keypoints/sam-mikulak-tumbling/
+  615  ls
+  616  ls -la
+  617  cd ~/notebooks/pose-estimation-jupyter/raw-keypoints/sam-mikulak-tumbling/
+  618  ls
+  619  cd ../..
+  620  git status
+  621  git add raw-keypoints/sam-mikulak-tumbling/
+  622  ls
+  623  git status
+  624  git commit -m "Add Sam Mikulak tumbling keypoints"
+  625  git push
+  626  git status
+  627  g add .
+  628  git add .
+  629  git commit -m "Update notebook"
+  630  git push
+  631  cd ..
+  632  cd pose-estimation-extract/
+  633  ls
+  634  git status
+  635  g add .
+  636  git add .
+  637  git commit -m "Update notebook"
+  638  git push
+  639  pyenv activate jupyter-notebook-369 
+  640  python
+  641  cd /usr/local/python/openpose/
+  642  ls
+  643  python
+  644  df -h
+  645  cd ~/
+  646  python
+  647  cd /usr/local/python/
+  648  ls
+  649  ls -la
+  650  cd openpose/
+  651  ls
+  652  ls -la
+  653  rm pyopenpose.so 
+  654  sudo rm pyopenpose.so 
+  655  ls
+  656  cd ..
+  657  ls
+  658  ln -s pyopenpose.cpython-36m-x86_64-linux-gnu.so pyopenpose.so
+  659  sudo ln -s pyopenpose.cpython-36m-x86_64-linux-gnu.so pyopenpose.so
+  660  ls -la
+  661  cd ..
+  662  cd ~
+  663  ls
+  664  python
+  665  mv /usr/local/python/openpose ~/tmp
+  666  sudo mv /usr/local/python/openpose ~/tmp
+  667  python
+  668  ls
+  669  cd /usr/local/python/
+  670  ls
+  671  mv ~/tmp /usr/local/python/openpose
+  672  sudo mv ~/tmp /usr/local/python/openpose
+  673  cd ~/
+  674  ls
+  675  cd /usr/local/python/
+  676  ls
+  677  rm pyopenpose.so 
+  678  sudo rm pyopenpose.so 
+  679  cd openpose/
+  680  ls
+  681  ln -s pyopenpose.cpython-36m-x86_64-linux-gnu.so pyopenpose.so
+  682  sudo ln -s pyopenpose.cpython-36m-x86_64-linux-gnu.so pyopenpose.so
+  683  ls -la
+  684  cd ~/
+  685  python
+  686  mkdir openpose-sample-videos
+  687  ls -la
+  688  cd openpose
+  689  cd ..
+  690  cd openpose-sample-videos/
+  691  ls
+  692  ls -la
+  693  wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=1c4j8ivJdXvn_cHYFh1yYBtQiCQQyG9YL' -O rasmus-flack-backflip.mp4
+  694  ls -la
+  695  cd ..
+  696  ls
+  697  cd notebooks/
+  698  ls
+  699  cd pose-estimation-jupyter/
+  700  ls
+  701  cd ..
+  702  ls
+  703  mkdir pose-estimation-extract
+  704  jupyter notebook
+  705  exit
+  706  history
+  707  history > history.txt
